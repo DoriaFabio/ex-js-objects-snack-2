@@ -72,10 +72,10 @@
 // };
 
 //? Qual è il metodo migliore per clonare l’oggetto chef, e perché?
-// const secondChef = {...chef}; //Perchè non mi prenderebbe la funzione makeBurger
+// const secondChef = {...chef}; //Perchè prende la funzione makeBurger
 
 //? Qual è il metodo migliore per clonare l’oggetto restaurant, e perché?
-// const secondRestaurant = structuredClone(restaurant);
+// const secondRestaurant = structuredClone(restaurant); //Perchè copia anche l'oggetto annidato
 
 //! Code question 5 (Bonus)
 // const hamburger = { 
@@ -143,7 +143,8 @@ const chef = {
 // Perchè sono presenti sia funzioni che oggetti annidati.
 
 //! Code question 7 (Bonus)
-//? Crea una funzione che permette la copia profonda (deep copy) di un oggetto, che copia anche i suoi metodi (proprietà che contengono funzioni). Usa l’oggetto di Code Question 6 come test.
+//? Crea una funzione che permette la copia profonda (deep copy) di un oggetto, che copia anche i suoi metodi (proprietà che contengono funzioni). 
+//? Usa l’oggetto di Code Question 6 come test.
 
 function deepCopy(obj) {
     if(typeof obj !== "object") {
